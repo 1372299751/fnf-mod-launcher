@@ -1689,8 +1689,8 @@ internal class DownloadForm : Form
                 "https://github.com/ShadowMario/FNF-PsychEngine/releases/tag/0.7.3", ""),
             new DItem("Psych Engine 0.6.3", "经典老版本。早期神作模组的「温床」。很经典，但较新的模组基本已不再支持此版本。",
                 "https://github.com/ShadowMario/FNF-PsychEngine/releases/tag/0.6.3", ""),
-            new DItem("Psych Engine 0.5.2", "远古怀旧版。仅适用于极少数拒绝更新的骨灰级老模组。",
-                "https://gamejolt.com/games/Pysch-Engine-Optimizado-por-mi-Espero-Te-Sirva/784131", "")
+            new DItem("Psych Engine 0.5.2h", "远古怀旧版。仅适用于极少数拒绝更新的骨灰级老模组。",
+                "https://gamejolt.com/games/psych-engine-0-5-2h/929394", "")
         }),
         new DItem("NovaFlare (NF) 引擎", "国产改版，基于 Psych 内核，NF 系 mod 用它跑", "https://github.com/NovaFlare-Engine-Concentration/FNF-NovaFlare-Engine/releases", "下载引擎"),
         new DItem("Codename Engine", "新一代引擎，脚本能力和特效更强", "https://github.com/FNF-CNE-Devs/CodenameEngine", "下载引擎"),
