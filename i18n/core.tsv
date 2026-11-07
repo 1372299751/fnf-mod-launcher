@@ -1,0 +1,314 @@
+# 手工校对的核心界面翻译：中文原文<TAB>English<TAB>繁體中文<TAB>Español
+# 只要第一列和 src 里的字符串完全一致就会覆盖机翻；多出来的行会被忽略。
+刷新	Refresh	刷新	Actualizar
+打开目录	Open folder	開啟目錄	Abrir carpeta
+下载模组	Download mods	下載模組	Descargar mods
+日志	Logs	日誌	Registros
+外观	Appearance	外觀	Apariencia
+分类	Category	分類	Categoría
+设置	Settings	設定	Ajustes
+搜索模组 / 引擎…	Search mod / engine…	搜尋模組 / 引擎…	Buscar mod / motor…
+本地模组 	Local mods 	Módulos locales 
+从左侧选择一个模组	Select a mod on the left	從左側選擇一個模組	Selecciona un mod a la izquierda
+▶   启动游戏	▶   Launch game	▶   啟動遊戲	▶   Iniciar juego
+▶   先选一个模组	▶   Select a mod first	▶   先選一個模組	▶   Elige un mod primero
+＋  添加模组	＋  Add mod	＋  新增模組	＋  Añadir mod
+识别中…	Detecting…	識別中…	Detectando…
+识别中	Detecting	識別中	Detectando
+网页	Web	網頁	Web
+引用	Reference	引用	Referencia
+外部引用	External reference	外部引用	Referencia externa
+★ 置顶	★ Pinned	★ 置頂	★ Fijado
+未分类	Uncategorized	未分類	Sin categoría
+查看模组信息	Mod details	查看模組資訊	Detalles del mod
+浏览器打开 · 无需下载	Opens in browser · no download	瀏覽器開啟 · 免下載	Se abre en el navegador · sin descarga
+引擎	Engine	引擎	Motor
+内容	Contents	內容	Contenido
+文件	Files	檔案	Archivos
+作者	Author	作者	Autor
+游玩	Playtime	遊玩	Tiempo jugado
+基本信息	Basic info	基本資訊	Información básica
+运行统计	Run stats	執行統計	Estadísticas
+曲目	Songs	曲目	Canciones
+预览	Preview	預覽	Vista previa
+资料	Details	資料	Detalles
+故事/成就/资源	Story / extras	故事/成就/資源	Historia / extras
+浏览器打开	Open in browser	瀏覽器開啟	Abrir en el navegador
+打开文件夹	Open folder	開啟資料夾	Abrir carpeta
+还没运行过	Never launched	尚未執行過	Nunca iniciado
+疑似原版曲目	Likely vanilla songs	疑似原版曲目	Canciones originales
+（已折叠）	(collapsed)	（已摺疊）	(plegado)
+自制 	Custom 	自製 	Propio 
+▶  打开网页	▶  Open website	▶  開啟網頁	▶  Abrir sitio web
+▶  启动游戏	▶  Launch game	▶  啟動遊戲	▶  Iniciar juego
+复制网址	Copy URL	複製網址	Copiar URL
+打开所在文件夹	Open folder location	開啟所在資料夾	Abrir carpeta contenedora
+更多	More	更多	Más
+重命名…	Rename…	重新命名…	Renombrar…
+设置分类…	Set category…	設定分類…	Establecer categoría…
+设置图标…	Set icon…	設定圖示…	Establecer icono…
+启动参数…	Launch arguments…	啟動參數…	Argumentos de inicio…
+引擎信息…	Engine info…	引擎資訊…	Información del motor…
+取消置顶	Unpin	取消置頂	Quitar fijado
+置顶此模组	Pin this mod	置頂此模組	Fijar este mod
+设置作者/简介…	Set author / intro…	設定作者/簡介…	Establecer autor / intro…
+复制路径	Copy path	複製路徑	Copiar ruta
+打开存档目录	Open save folder	開啟存檔目錄	Abrir carpeta de guardado
+备份存档	Back up save	備份存檔	Copia de seguridad
+恢复存档…	Restore save…	還原存檔…	Restaurar guardado…
+恢复存档	Restore save	還原存檔	Restaurar guardado
+存档已恢复	Save restored	存檔已還原	Guardado restaurado
+创建桌面快捷方式	Create desktop shortcut	建立桌面捷徑	Crear acceso directo
+创建开始菜单快捷方式	Create Start menu shortcut	建立開始功能表捷徑	Crear acceso en el menú Inicio
+从列表删除	Remove from list	從清單移除	Quitar de la lista
+删除本地游戏…	Delete local game…	刪除本機遊戲…	Eliminar juego local…
+批量操作（	Batch actions (	批次操作（	Acciones en lote (
+批量隐藏	Hide all selected	批次隱藏	Ocultar seleccionados
+批量取消隐藏	Unhide all selected	批次取消隱藏	Mostrar seleccionados
+批量设分类…	Set category for all…	批次設定分類…	Categoría para todos…
+批量备份存档	Back up all saves	批次備份存檔	Copia de todos los guardados
+检查更新	Check for updates	檢查更新	Buscar actualizaciones
+移除引用	Remove reference	移除引用	Quitar referencia
+关闭启动器？	Close launcher?	關閉啟動器？	¿Cerrar el lanzador?
+隐藏到托盘	Hide to tray	隱藏到系統匣	Ocultar en la bandeja
+直接退出	Exit	直接結束	Salir
+记住我的选择	Remember my choice	記住我的選擇	Recordar mi elección
+关闭启动器同时关闭游戏	Also close the game	關閉啟動器同時關閉遊戲	Cerrar también el juego
+取消	Cancel	取消	Cancelar
+保存	Save	儲存	Guardar
+确定	OK	確定	Aceptar
+关闭	Close	關閉	Cerrar
+选择放模组的文件夹	Folder that contains your mods	選擇放模組的資料夾	Carpeta con tus mods
+默认	Default	預設	Defecto
+强调色	Accent color	強調色	Color de acento
+自定义主色	Custom accent	自訂主色	Acento personalizado
+排序方式	Sort order	排序方式	Orden
+名称	Name	名稱	Nombre
+最近启动	Recent	最近啟動	Recientes
+曲目/预览显示	Songs / previews display	曲目/預覽顯示	Canciones / vista previa
+窗口	Window	視窗	Ventana
+合并	Inline	合併	Integrado
+行为	Behavior	行為	Comportamiento
+清理缓存…	Cache…	清理快取…	Limpiar…
+导出诊断信息	Diagnose	匯出診斷資訊	Diagnóstico
+查看键盘统计…	Key stats…	查看鍵盤統計…	Teclas…
+清理试听缓存	Clear preview cache	清理試聽快取	Limpiar caché de audio
+关于	About	關於	Acerca de
+关闭窗口时：每次询问	On close: always ask	關閉視窗時：每次詢問	Al cerrar: preguntar siempre
+下载中心	Download center	下載中心	Centro de descargas
+清理垃圾	Clean up	清理垃圾	Limpiar
+重新扫描	Rescan	重新掃描	Volver a escanear
+清理选中	Clean selected	清理選取	Limpiar selección
+启动器缓存	Launcher cache	啟動器快取	Caché del lanzador
+引擎日志	Engine logs	引擎日誌	Registros del motor
+试听缓存	Audio preview cache	試聽快取	Caché de audio
+查看	View	檢視	Ver
+添加…	Add…	新增…	Añadir…
+删除	Delete	刪除	Eliminar
+共 	Total 	共 	Total 
+从压缩包安装	Install from archive	從壓縮檔安裝	Instalar desde archivo
+识别到压缩包内容	Archive contents detected	識別到壓縮檔內容	Contenido detectado
+以文件夹名称命名	Name from folder	以資料夾名稱命名	Nombrar según carpeta
+以 exe 文件命名	Name from exe	以 exe 檔名命名	Nombrar según exe
+开始安装	Start install	開始安裝	Iniciar instalación
+取消安装	Cancel install	取消安裝	Cancelar instalación
+准备中…	Preparing…	準備中…	Preparando…
+完成	Done	完成	Hecho
+添加模组	Add mod	新增模組	Añadir mod
+添加	Add	新增	Añadir
+浏览…	Pick…	瀏覽…	Elegir…
+网页版	Web version	網頁版	Versión web
+保存	Save	儲存	Guardar
+未知	Unknown	未知	Desconocido
+本地模组（选一个带 exe 的模组文件夹）	Local mods (pick a folder that has an exe)	本機模組（選一個帶 exe 的模組資料夾）	Módulos locales (elige una carpeta con exe)
+选择模组文件夹（里面要有 exe）	Choose the mod folder (must contain the exe)	選擇模組資料夾（裡面要有 exe）	Elige la carpeta del mod (debe tener el exe)
+请选择一个存在的文件夹。	Please pick a folder that exists.	請選擇一個存在的資料夾。	Elige una carpeta que exista.
+网页版 FNF（填名称和网址，用系统默认浏览器打开）	Web FNF (name + URL, opens in your browser)	網頁版 FNF（填名稱和網址，用系統預設瀏覽器開啟）	FNF web (nombre + URL, se abre en el navegador)
+名称：例如 FNF 网页版 / 某个网页移植	Name: e.g. FNF web / some web port	名稱：例如 FNF 網頁版 / 某個網頁移植	Nombre: p. ej. FNF web / un port web
+添加网页版	Add web entry	新增網頁版	Añadir web
+网页版 FNF	Web FNF	網頁版 FNF	FNF web
+请填写网址。	Please enter a URL.	請填寫網址。	Escribe una URL.
+这个网址看起来不对。	That does not look like a valid URL.	這個網址看起來不對。	Esa URL no parece válida.
+下载游戏…	Download game…	下載遊戲…	Descargar juego…
+从压缩包安装…	Install from archive…	從壓縮檔安裝…	Instalar desde archivo…
+识别目录：	Mods folder: 	識別目錄：	Carpeta de mods: 
+引擎信息 · 	Engine info · 	引擎資訊 · 	Motor · 
+自动识别结果：	Auto-detected: 	自動識別結果：	Detectado:
+引擎名	Engine name	引擎名稱	Motor
+版本号（可留空）	Version (optional)	版本號（可留空）	Versión (opcional)
+关于 FNF 模组启动器	About FNF Mod Launcher	關於 FNF 模組啟動器	Acerca de FNF Mod Launcher
+版本 	Version 	版本 	Versión 
+作者：蘑菇汉化组组长	Author: Mushroom Localization Team	作者：蘑菇漢化組組長	Autor: equipo de traducción Mushroom
+打开 B 站主页	Open Bilibili profile	開啟 B 站主頁	Abrir perfil de Bilibili
+开始使用	Get started	開始使用	Empezar
+稍后设置	Set up later	稍後設定	Configurar luego
+文件夹不存在	Folder does not exist	資料夾不存在	La carpeta no existe
+自动查找	Auto-detect	自動尋找	Detección automática
+模组文件夹	Mods folder	模組資料夾	Carpeta de mods
+选择放 FNF 模组的文件夹	Pick the folder that holds your FNF mods	選擇放 FNF 模組的資料夾	Elige la carpeta de tus mods
+没在常见位置找到模组文件夹，请手动选择。	Could not find a mods folder in the usual places, please pick one.	沒在常見位置找到模組資料夾，請手動選擇。	No se encontró una carpeta de mods, elígela manualmente.
+这个文件夹不存在，请重新选择。	That folder does not exist, pick another one.	這個資料夾不存在，請重新選擇。	Esa carpeta no existe, elige otra.
+这个文件夹里还没有模组（可以先用「＋ 添加模组」加进去）	No mods in this folder yet (use “＋ Add mod” first)	這個資料夾裡還沒有模組（可以先用「＋ 新增模組」加進去）	Sin mods en esta carpeta (usa «＋ Añadir mod»)
+压缩包是空的	The archive is empty	壓縮檔是空的	El archivo está vacío
+文件：	File: 	檔案：	Archivo: 
+内部根目录：	Inner root: 	內部根目錄：	Raíz interna: 
+（压缩包根）	(archive root)	（壓縮檔根）	(raíz del archivo)
+游戏 exe：	Game exe: 	遊戲 exe：	Exe del juego: 
+未找到（可能不是游戏目录）	Not found (maybe not a game folder)	未找到（可能不是遊戲目錄）	No encontrado (quizá no sea un juego)
+文件数量：	File count: 	檔案數量：	Número de archivos: 
+安装到：	Install to: 	安裝到：	Instalar en: 
+给这个模组起个名字（同时作为文件夹名）：	Name this mod (also the folder name): 	給這個模組起個名字（同時作為資料夾名）：	Nombra el mod (también la carpeta):
+名字不能为空。	Name cannot be empty.	名字不能為空。	El nombre no puede estar vacío.
+安装	Install	安裝	Instalar
+新模组	New mod	新模組	Mod nuevo
+不支持的格式	Unsupported format	不支援的格式	Formato no compatible
+缺少解压工具	Extraction tool missing	缺少解壓工具	Falta la herramienta de extracción
+正在安装…	Installing…	正在安裝…	Instalando…
+安装完成	Install finished	安裝完成	Instalación completada
+正在写入文件…	Writing files…	正在寫入檔案…	Escribiendo archivos…
+已取消	Cancelled	已取消	Cancelado
+下载中心	Downloads	下載中心	Descargas
+引擎	Engines	引擎	Motores
+模组站	Mod sites	模組站	Sitios de mods
+工具	Tools	工具	Herramientas
+不再提示	Dismiss	不再提示	No volver a mostrar
+展开	Show	展開	Mostrar
+收起	Hide	收起	Ocultar
+打开	Open	開啟	Abrir
+复制	Copy	複製	Copiar
+最常用的 FNF 引擎。点「展开」看各版本区别后再挑	Most used FNF engine. Tap “Show” to compare versions.	最常用的 FNF 引擎。點「展開」看各版本區別後再挑	El motor más usado. Pulsa «Mostrar» para comparar versiones.
+国产改版，基于 Psych 内核，兼容性更好、加载更快	CN fork of Psych: better compatibility, faster loading.	國產改版，基於 Psych 內核，相容性更好、載入更快	Bifurcación china de Psych: más compatible y rápida.
+新一代引擎，脚本能力和特效更强	Newer engine with stronger scripting and effects.	新一代引擎，腳本能力和特效更強	Motor nuevo con más scripting y efectos.
+老牌引擎，很多经典 mod 基于它	Older engine, many classic mods use it.	老牌引擎，很多經典 mod 基於它	Motor antiguo, muchos mods clásicos lo usan.
+GameBanana 引擎分类	GameBanana engine category	GameBanana 引擎分類	Categoría de motores en GameBanana
+启动游戏后隐藏到系统托盘（双击图标恢复）	Hide to tray after launch (double-click the icon)	啟動遊戲後隱藏到系統匣（雙擊圖示還原）	Ocultar en la bandeja tras iniciar
+把疑似原版曲目折叠起来（关闭则全部平铺显示）	Collapse likely vanilla songs	把疑似原版曲目摺疊起來	Plegar canciones originales
+统计键盘按键次数（只记次数，不记录输入内容）	Count key presses (counts only, no input)	統計鍵盤按鍵次數（只記次數，不記錄輸入）	Contar pulsaciones (solo conteo)
+永久删除模组（不进回收站，危险操作）	Delete mods permanently (no recycle bin)	永久刪除模組（不進回收桶）	Borrar mods definitivamente
+列表里显示的模组（取消勾选就只在后台保留，随时可勾回来）	Mods shown in the list (uncheck to hide)	列表裡顯示的模組（取消勾選就只在後台保留）	Mods en la lista (desmarca para ocultar)
+识别路径（放模组的文件夹）	Mods folder (where your mods live)	識別路徑（放模組的資料夾）	Carpeta de mods
+关闭窗口时：	On close: 	關閉視窗時：	Al cerrar: 
+键盘统计	Key stats	鍵盤統計	Estadísticas
+总计 	Total 	總計 	Total 
+按模组	By mod	按模組	Por mod
+启动器缓存（模组信息）	Launcher cache (mod info)	啟動器快取（模組資訊）	Caché del lanzador
+引擎日志与崩溃记录	Engine logs and crash dumps	引擎日誌與崩潰記錄	Registros de motor
+试听缓存（预混 WAV）	Audio cache (premixed WAV)	試聽快取（預混 WAV）	Caché de audio
+旧存档备份	Old save backups	舊存檔備份	Copias antiguas
+可清理：	Cleanable: 	可清理：	Se puede limpiar:
+✓  您的游戏很干净，没有需要清理的东西	✓  Nothing to clean, your setup is tidy	✓  您的遊戲很乾淨，沒有需要清理的東西	✓  No hay nada que limpiar
+启动日志	Launch log	啟動日誌	Registro de inicio
+复制全部	Copy all	複製全部	Copiar todo
+清空日志	Clear log	清空日誌	Borrar registro
+清空启动日志？	Clear the launch log?	清空啟動日誌？	¿Borrar el registro?
+用记事本打开	Open in Notepad	用記事本開啟	Abrir en Notepad
+正常	OK	正常	Normal
+异常	Failed	異常	Falló
+参数：	Args: 	參數：	Args: 
+开始：	Start: 	開始：	Inicio: 
+退出码：	Exit code: 	退出碼：	Código de salida: 
+耗时：	Took: 	耗時：	Duración: 
+查看日志	View log	檢視日誌	Ver registro
+复制信息	Copy info	複製資訊	Copiar info
+这次启动没有正常结束	This launch did not end normally	這次啟動沒有正常結束	Este inicio no terminó bien
+启动中	Starting	啟動中	Iniciando
+按模组	By mod	按模組	Por mod
+总计 	Total 	總計 	Total 
+还没有数据（在设置里勾选「统计键盘按键次数」后开始记录）	No data yet (enable key stats in Settings)	還沒有資料（在設定裡勾選「統計鍵盤按鍵次數」）	Sin datos (activa el conteo en Ajustes)
+选好后会问你要「复制到识别目录」还是「只添加引用」；也可以把文件夹或 .zip 直接拖进来。	Then choose "copy into the mods folder" or "reference only"; you can also drop a folder or .zip here.	選好後會問你要「複製到識別目錄」還是「只新增引用」	Luego elige copiar o solo referenciar; también puedes arrastrar una carpeta o .zip
+识别目录：	Mods folder: 	識別目錄：	Carpeta de mods: 
+背景图	Background image	背景圖	Imagen de fondo
+还没选背景图（默认纯色底）	No image yet (solid color)	還沒選背景圖（預設純色底）	Sin imagen (color sólido)
+选择图片…	Pick image…	選擇圖片…	Elegir imagen…
+清除背景	Clear image	清除背景	Quitar imagen
+背景浓淡	Background strength	背景濃淡	Intensidad
+卡片点「打开」用浏览器去下；启动器不代下，避免违反站点条款	Click "Open" to download in your browser; the launcher never downloads for you.	卡片點「開啟」用瀏覽器去下；啟動器不代下	Pulsa «Open» para descargar en el navegador
+下载引擎	Engines	下載引擎	Motores
+官方最终版。功能最全、代码最规范。适合自己做模组或体验纯净原版；但部分老模组尚未适配，存在兼容风险。	Latest official build: fullest features, may break old mods.	官方最終版。功能最全、程式碼最規範，部分老模組尚未適配	Versión oficial final: más funciones, riesgo con mods antiguos.
+兼容性最广（强烈推荐）。目前社区的「事实主流」。绝大多数新老模组的首选适配版本，玩模组下这个准没错。	Best compatibility (recommended): the community standard.	相容性最廣（強烈推薦），目前社群的事實主流	Mejor compatibilidad (recomendado): el estándar.
+经典老版本，早期神作模组的「温床」。很经典，但较新的模组基本已不再支持此版本。	Classic old build: great for early mods, newer mods may not run.	經典老版本，早期神作模組的溫床，較新模組多不支援	Versión clásica: ideal para mods antiguos.
+远古怀旧版，仅适用于极少数拒绝更新的骨灰级老模组。	Ancient build: only for a few very old mods.	遠古懷舊版，僅適用極少數老模組	Versión muy antigua: solo para mods viejos.
+按下载量/BPM 排序找引擎	Browse engines by downloads / BPM	按下載量/BPM 排序找引擎	Ver motores por descargas / BPM
+全部分类	All categories	全部分類	Todas
+导出模组清单…	Export mod list…	匯出模組清單…	Exportar lista…
+导入模组清单…	Import mod list…	匯入模組清單…	Importar lista…
+网址：例如 https://example.com/fnf/	URL: e.g. https://example.com/fnf/
+搜索模组 / 引擎…	Search mods / engines…	搜尋模組 / 引擎…	Buscar mods / motores…
+模组最多，新 mod 大多首发在这	Most mods start here	模組最多，新 mod 大多首發在這	Aquí salen la mayoría de mods
+模组 / 皮肤 / 引擎都有，页面里能直接下 zip	Mods, skins and engines; zip downloads in-page	模組 / 面板 / 引擎都有，頁面裡能直接下 zip	Mods, skins y motores; zip en la página
+官方风格的网页版 FNF，浏览器里直接玩	Official-style web FNF, play in browser	官方風格的網頁版 FNF，瀏覽器裡直接玩	FNF web oficial, juega en el navegador
+在线直接玩，也能找到不少移植版	Play online, plus many web ports	線上直接玩，也能找到不少移植版	Juega online y encuentra ports
+解压整合包 / zip 必备（本启动器不代下）	Needed to unpack packs / zips	解壓縮整合包 / zip 必備（本啟動器不代下）	Necesario para descomprimir packs
+引擎参数、Lua API、目录结构说明	Engine args, Lua API, folder layout	引擎參數、Lua API、目錄結構說明	Args del motor, Lua API, estructura
+B 站搜「FNF 汉化」，社区教程很多	Search “FNF 汉化” on Bilibili for tutorials	B 站搜「FNF 漢化」，社群教學很多	Busca tutoriales en Bilibili
+经典老版本，早期神作模组的「温床」。很经典，但较新的模组基本已不再支持此版本。	Classic old build: fine for early mods, newer ones may not run.	經典老版本，早期神作模組的溫床，較新模組多不支援	Versión clásica: vale para mods antiguos
+远古怀旧版，仅适用于极少数拒绝更新的骨灰级老模组。	Ancient build: only for a few very old mods.	遠古懷舊版，僅適用極少數老模組	Versión muy antigua: solo mods viejos
+国产改版，基于 Psych 内核，NF 系 mod 用它跑	CN fork of Psych; runs the NF mods	國產改版，基於 Psych 內核，NF 系 mod 用它跑	Bifurcación china de Psych para mods NF
+全部分类	All categories	全部分類	Todas
+未分类	Uncategorized	未分類	Sin categoría
+导出模组清单…	Export mod list…	匯出模組清單…	Exportar lista…
+导入模组清单…	Import mod list…	匯入模組清單…	Importar lista…
+识别目录: 	Mods folder: 	識別目錄：	Carpeta de mods: 
+引擎识别与扫描结果的缓存，清掉后下次启动会重新识别	Cache of engine detection and scan results.	引擎識別與掃描結果的快取	Caché de detección y escaneo
+合听时生成的临时音频文件	Temporary audio files for mixed playback.	合聽時產生的臨時音訊檔	Audio temporal de la mezcla
+每个模组只保留最近 2 份备份	Keeps only the 2 newest backups per mod.	每個模組只保留最近 2 份備份	Solo las 2 copias más recientes
+经典老版本。早期神作模组的「温床」。很经典，但较新的模组基本已不再支持此版本。	Classic old build: great for early mods, newer mods may not run.	經典老版本，早期神作模組的溫床，較新模組多不支援	Versión clásica: ideal para mods antiguos
+远古怀旧版。仅适用于极少数拒绝更新的骨灰级老模组。	Ancient build: only for a few very old mods.	遠古懷舊版，僅適用極少數老模組	Versión muy antigua: solo mods viejos
+卡片点「打开」用浏览器去下；启动器不代为下载，避免违反站点条款	Click "Open" to download in your browser; the launcher never downloads for you.	卡片點「開啟」用瀏覽器去下；啟動器不代為下載	Pulsa «Open» para descargar en el navegador
+  ⚠  如果不知道选择哪个版本，请询问模组资源发布者	  ⚠  Not sure which version? Ask the mod's author.	  ⚠  如果不知道選擇哪個版本，請詢問模組資源發布者	  ⚠  ¿No sabes qué versión? Pregunta al autor.
+识别目录: 	Mods folder: 	識別目錄：	Carpeta de mods: 
+搜索模组 / 引擎…	Search mods / engines…	搜尋模組 / 引擎…	Buscar mods / motores…
+  可清理：	  Cleanable: 	  可清理：	  Se puede limpiar:
+　·　识别目录：	 · mods folder: 	 · 識別目錄：	 · carpeta de mods: 
+双击 / 回车 启动　·　↑↓ 选择　·　Ctrl+1~9 快速启动　·　F5 刷新　·　+ / - 缩放界面　·　右键更多	Double-click / Enter: launch　·　↑↓: select　·　Ctrl+1~9: quick launch　·　F5: refresh　·　+ / -: zoom　·　right-click: more
+本地模组 	Local mods 	本機模組 	Módulos locales 
+是：复制到 	Yes: copy to 	是：複製到 	Sí: copiar a 
+否：只添加引用（文件保持原位）	No: reference only (files stay where they are)	否：只新增引用（檔案保持原位）	No: solo referencia
+取消：什么都不做	Cancel: do nothing	取消：什麼都不做	Cancelar: no hacer nada
+（压缩包根）	(archive root)	（壓縮檔根）	(raíz del archivo)
+内部根目录：	Inner root: 	內部根目錄：	Raíz interna: 
+文件数量：	File count: 	檔案數量：	Archivos: 
+安装到：	Install to: 	安裝到：	Instalar en: 
+游戏 exe：	Game exe: 	遊戲 exe：	Exe del juego: 
+未找到（可能不是游戏目录）	Not found (maybe not a game folder)	未找到（可能不是遊戲目錄）	No encontrado
+是	Yes	是	Sí
+否	No	否	No
+确定	OK	確定	Aceptar
+提示	Notice	提示	Aviso
+把「	Add “	把「	Añadir «
+」添加为模组？	” as a mod?	」新增為模組？	» como mod?
+选「隐藏到托盘」启动器会留在系统托盘；否则直接结束进程。	"Hide to tray" keeps the launcher in the tray; otherwise the process ends.	選「隱藏到系統匣」啟動器會留在系統匣；否則直接結束程序。	"Ocultar en la bandeja" mantiene el lanzador; si no, se cierra.
+隐藏到托盘	Hide to tray	隱藏到系統匣	Ocultar en la bandeja
+直接退出	Exit	直接結束	Salir
+记住我的选择	Remember my choice	記住我的選擇	Recordar mi elección
+关闭启动器同时关闭游戏	Also close the game	關閉啟動器同時關閉遊戲	Cerrar también el juego
+模组启动器	Mod Launcher	模組啟動器	Lanzador de mods
+FNF 模组启动器	FNF Mod Launcher	FNF 模組啟動器	FNF Mod Launcher
+版本未标注	version unknown	版本未標註	versión desconocida
+← → 切换	← →: switch	← → 切換	← →: cambiar
+Esc 关闭	Esc: close	Esc 關閉	Esc: cerrar
+故事线 / 周	Story / weeks	故事線 / 週	Historia / semanas
+资源构成	Asset breakdown	資源構成	Recursos
+存档备份	Save backups	存檔備份	Copias de guardado
+引擎与文件	Engine & files	引擎與檔案	Motor y archivos
+暂无	None	暫無	Ninguno
+立即备份	Back up now	立即備份	Copiar ahora
+还原最近	Restore latest	還原最近	Restaurar último
+打开备份目录	Open backup folder	開啟備份目錄	Abrir copias
+Lua 脚本…	Lua scripts…	Lua 腳本…	Scripts Lua…
+重命名文件夹…	Rename folder…	重新命名資料夾…	Renombrar carpeta…
+存档目录：	Save folder: 	存檔目錄：	Carpeta de guardado: 
+版本未标注	version unknown	版本未標註	versión desconocida
+图片 	 images 	圖片 	imágenes 
+音频 	 audio 	音訊 	audio 
+脚本 	 scripts 	腳本 	scripts 
+人声+伴奏	Voices+Inst	人聲+伴奏	Voces+Inst
+合并音轨	Merged audio	合併音軌	Audio mezclado
+合听（伴奏+人声）	Mix (Inst+Voices)	合聽（伴奏+人聲）	Mezclar (Inst+Voces)
+伴奏	Instrumental	伴奏	Instrumental
+人声	Voices	人聲	Voces
+合听	Mix	合聽	Mezclar
+▶  合听（伴奏+人声）	▶  Mix (Inst+Voices)	▶  合聽（伴奏+人聲）	▶  Mezclar (Inst+Voces)
+▶  合听	▶  Mix	▶  合聽	▶  Mezclar
+前置	Front	前置	Frente
+成就	Achievements	成就	Logros

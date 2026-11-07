@@ -1,0 +1,28 @@
+# ---- 构建产物 ----
+dist/
+*.exe
+*.pdb
+obj/
+bin/
+
+# ---- 本机运行数据（不要提交）----
+launcher.ini
+launcher.ini.bak
+启动日志.txt
+缺失模组.txt
+backups/
+siteicons/
+试听缓存/
+
+# ---- 编辑器 / 系统 ----
+.vs/
+.idea/
+*.user
+*.suo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- 临时调试文件 ----
+*-dbg.txt
+ui-*.png
