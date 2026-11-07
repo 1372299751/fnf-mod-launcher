@@ -2,6 +2,9 @@
 
 一个给《Friday Night Funkin'》整合包 / 模组用的 Windows 启动器：自动扫描模组文件夹、识别引擎与版本，顺手把曲目试听、截图预览、存档备份、压缩包安装都做在一起。
 
+本项目代码百分百由AI生成，本人仅参与构想、测试以及素材提供。我一个小孩周末做着玩的
+
+
 界面全部自绘（无边框窗口 + 自定义控件），单文件 exe，不依赖任何第三方库。
 
 > **English (short)** — A Windows launcher for *Friday Night Funkin'* mods and mod packs.
@@ -10,6 +13,7 @@
 > The **UI is Chinese only** — this repo is primarily for the Chinese FNF community.
 > Build from source: `powershell -ExecutionPolicy Bypass -File build.ps1` (needs .NET Framework 4.x, no SDK).
 > Full feature breakdown: [docs/功能与实现说明.md](docs/功能与实现说明.md). Licensed under MIT.
+> The code for this project is 100% AI-generated; I was only involved in the ideas, testing, and providing materials. I'm just a kid making this for fun on weekends.
 
 ![主界面](docs/main.png)
 
