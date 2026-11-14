@@ -379,6 +379,39 @@ namespace FnfLauncher
                     FindRoot(sourceDir, out innerRoot, out exeName, out count);
                 }
 
+                if (string.IsNullOrEmpty(exeName))
+                {
+                    // 没有 exe：可能是依附引擎的包（只有 mods\ / assets\），先问装到哪个引擎
+                    string packPrefix = "";
+                    bool packMods = false, packAssets = false, dependent = false;
+                    string packDir = null;
+                    if (ext == ".zip")
+                    {
+                        dependent = EnginePack.InspectZip(path, innerRoot, out packPrefix, out packMods, out packAssets);
+                    }
+                    else
+                    {
+                        packDir = string.IsNullOrEmpty(innerRoot) ? sourceDir : Path.Combine(sourceDir, innerRoot.Replace('/', (char)92));
+                        if (!Directory.Exists(packDir)) packDir = sourceDir;
+                        dependent = EnginePack.InspectFolder(packDir, out packPrefix, out packMods, out packAssets);
+                    }
+                    if (dependent)
+                    {
+                        string defName = ZipInstallForm.Clean(string.IsNullOrEmpty(innerRoot)
+                            ? Path.GetFileNameWithoutExtension(path)
+                            : Path.GetFileName(innerRoot.Replace('/', (char)92)));
+                        Config cfg2 = null;
+                        try { cfg2 = new Config(Path.Combine(Path.GetDirectoryName(Application.ExecutablePath), "launcher.ini")); }
+                        catch { }
+                        string packErr = "";
+                        string engineDir = (ext == ".zip")
+                            ? EnginePack.RunZip(owner, targetRoot, cfg2, path, innerRoot, packPrefix, packMods, packAssets, defName, out packErr)
+                            : EnginePack.RunFolder(owner, targetRoot, cfg2, packDir, packPrefix, packMods, packAssets, defName, out packErr);
+                        if (engineDir != null) { installedPath = engineDir; return true; }
+                        return false;
+                    }
+                }
+
                 using (ZipInstallForm zf = new ZipInstallForm(path, innerRoot, exeName, count, targetRoot))
                 {
                     if (zf.ShowDialog(owner) != DialogResult.OK) return false;

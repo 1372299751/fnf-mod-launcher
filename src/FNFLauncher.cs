@@ -7066,6 +7066,24 @@ namespace FnfLauncher
                 return;
             }
 
+            // 没有 exe、只有 mods\ / assets\：这是依附引擎的包，先问装到哪个引擎
+            string packPrefix;
+            bool packMods, packAssets;
+            if (EnginePack.InspectFolder(dir, out packPrefix, out packMods, out packAssets))
+            {
+                string packErr;
+                string engineDir = EnginePack.RunFolder(this, root, cfg, dir, packPrefix, packMods, packAssets,
+                    ZipInstallForm.Clean(di.Name), out packErr);
+                if (engineDir != null)
+                {
+                    Rescan();
+                    string engineName = Path.GetFileName(engineDir.TrimEnd('\\'));
+                    SelectByName(engineName);
+                    ShowToast("已装到引擎：" + engineName);
+                }
+                return;
+            }
+
             DialogResult r = AskBox.Show(this, 
                 Lang.T("把「") + di.Name + Lang.T("」添加为模组？") + "\r\n\r\n" +
                 Lang.T("是：复制到 ") + root + "\r\n" +

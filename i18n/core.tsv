@@ -666,3 +666,23 @@ FNF 汉化教程	FNF Chinese patch guide
 分类：	Category: 
 分类:	Category: 
 查看 · 	View · 
+选择引擎	Choose an engine
+这个模组需要依附引擎	This mod needs an engine
+包里没有 exe，是 mods 与 assets 结构，会分别合并进所选引擎的 mods 与 assets 文件夹。同名文件会被覆盖，建议先备份。	The pack has no exe and uses a mods + assets layout; it will be merged into the chosen engine's mods and assets folders. Files with the same name are overwritten — back up first.
+包里没有 exe，是 mods 结构，会合并进所选引擎的 mods 文件夹。同名文件会被覆盖，建议先备份。	The pack has no exe and uses a mods layout; it will be merged into the chosen engine's mods folder. Files with the same name are overwritten — back up first.
+包里没有 exe，是 assets 结构，会合并进所选引擎的 assets 文件夹。同名文件会被覆盖，建议先备份。	The pack has no exe and uses an assets layout; it will be merged into the chosen engine's assets folder. Files with the same name are overwritten — back up first.
+包里没有 exe，像是某个引擎的 mod 文件夹，会装进所选引擎的 mods 里。同名文件会被覆盖，建议先备份。	The pack has no exe and looks like a mod folder; it will be installed into the chosen engine's mods. Files with the same name are overwritten — back up first.
+识别目录里还没有可用的引擎。\r\n先点「下载引擎」拿一个，解压到识别目录，再回来。	No engine in the mods folder yet.\r\nDownload one, extract it here, then come back.
+装到引擎里的名字（作为 mods 下的子文件夹名）：	Name inside the engine (the folder under mods):
+安装位置：	Install to: 
+（先选一个引擎）	(pick an engine first)
+下载引擎…	Download engines…
+安装到选中的引擎	Install into engine
+正在装到 	Installing into 
+已装到 	Installed into 
+已装到引擎：	Installed into: 
+写入 	Wrote 
+ 个文件。	 files.
+本地模组（完整游戏，或只有 mods / assets 的模组包）	Local mods (a full game, or a pack with only mods / assets)
+选择模组文件夹（完整游戏，或 mods / assets 的包）	Choose the mod folder (a full game, or a pack of mods / assets)
+名称：例如 FNF 网页版	Name: e.g. FNF web

@@ -1728,8 +1728,9 @@ internal class DownloadForm : Form
 
     private static readonly string[] catNames = { "模组站", "下载引擎", "工具" };
 
-    public DownloadForm()
+    public DownloadForm(string startCat = null)
     {
+        if (!string.IsNullOrEmpty(startCat)) current = startCat;
         Text = "下载中心";
         BackColor = Ui.Bg;
         ForeColor = Ui.Txt;
@@ -1800,6 +1801,7 @@ internal class DownloadForm : Form
         for (int i = 0; i < catNames.Length; i++)
         {
             RoundButton b = new RoundButton(catNames[i]);
+            b.Tag = catNames[i];   // 文本会被翻译，选中判断只能靠 Tag
             b.Filled = false;
             b.SetBounds(Ui.S(16), Ui.S(108) + i * Ui.S(44), Ui.S(116), Ui.S(34));
             string c = catNames[i];
@@ -1839,11 +1841,11 @@ internal class DownloadForm : Form
     private void RefreshCats()
     {
         int idx = 0;
-        for (int i = 0; i < cats.Count; i++) if (cats[i].Text == current) idx = i;
+        for (int i = 0; i < cats.Count; i++) if (object.Equals(cats[i].Tag, current)) idx = i;
         markTargetY = Ui.S(108) + idx * Ui.S(44);
         foreach (RoundButton b in cats)
         {
-            b.Filled = (b.Text == current);
+            b.Filled = object.Equals(b.Tag, current);
             b.BackColor = Ui.Bg;
             b.Invalidate();
         }

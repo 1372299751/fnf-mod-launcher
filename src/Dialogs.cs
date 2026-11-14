@@ -237,7 +237,7 @@ namespace FnfLauncher
             ClientSize = new Size(Ui.S(540), Ui.S(316));
 
             // --- 本地模组
-            Label h1 = Head("本地模组（选一个带 exe 的模组文件夹）");
+            Label h1 = Head("本地模组（完整游戏，或只有 mods / assets 的模组包）");
             h1.SetBounds(Ui.S(24), Ui.S(18), Ui.S(460), Ui.S(22));
 
             txtFolder = new TextBox();
@@ -253,7 +253,7 @@ namespace FnfLauncher
             bFolder.Click += delegate
             {
                 FolderBrowserDialog fd = new FolderBrowserDialog();
-                fd.Description = "选择模组文件夹（里面要有 exe）";
+                fd.Description = "选择模组文件夹（完整游戏，或 mods / assets 的包）";
                 if (fd.ShowDialog(this) == DialogResult.OK) txtFolder.Text = fd.SelectedPath;
             };
 
@@ -299,7 +299,7 @@ namespace FnfLauncher
             ln.ForeColor = Ui.Sub;
             ln.Font = Ui.FSmall;
             ln.TextAlign = ContentAlignment.MiddleLeft;
-            ln.Text = "名称：例如 FNF 网页版 / 某个网页移植";
+            ln.Text = "名称：例如 FNF 网页版";
             ln.SetBounds(Ui.S(24), Ui.S(148), Ui.S(220), Ui.S(18));
 
             txtName.SetBounds(Ui.S(24), Ui.S(168), Ui.S(220), Ui.S(26));
