@@ -404,6 +404,27 @@ namespace FnfLauncher
             using (Pen pen = new Pen(c, w)) { g.DrawPath(pen, p); }
         }
 
+        // 小方框里的播放/停止图标：直接画形状，字符 ▶ / ■ 在小字号下会缩成一条竖线
+        public static void PlayGlyph(Graphics g, Rectangle r, Color c)
+        {
+            int h = Math.Max(4, (int)(r.Height * 0.36f));
+            int w = Math.Max(4, (int)(h * 0.86f));
+            int cx = r.X + r.Width / 2 + w / 5;   // 三角形重心偏左，往右偏一点才像居中
+            int cy = r.Y + r.Height / 2;
+            using (SolidBrush b = new SolidBrush(c))
+                g.FillPolygon(b, new Point[] {
+                    new Point(cx - w, cy - h),
+                    new Point(cx - w, cy + h),
+                    new Point(cx + w / 2, cy) });
+        }
+
+        public static void StopGlyph(Graphics g, Rectangle r, Color c)
+        {
+            int s = Math.Max(4, (int)(r.Height * 0.30f));
+            FillRound(g, new Rectangle(r.X + (r.Width - s) / 2, r.Y + (r.Height - s) / 2, s, s),
+                Math.Max(1, s / 3), c);
+        }
+
         public static void Text(Graphics g, string s, Font f, Rectangle r, Color c, TextFormatFlags flags)
         {
             s = Lang.T(s);
@@ -2637,13 +2658,12 @@ namespace FnfLauncher
                 if (playing)
                 {
                     Ui.FillRound(g, pr, Ui.S(4), Ui.Accent);
-                    Ui.Text(g, "■", Ui.FSmall, pr, Color.White, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+                    Ui.StopGlyph(g, pr, Color.White);
                 }
                 else
                 {
                     Ui.FillRound(g, pr, Ui.S(4), Ui.CardHi);
-                    Ui.Text(g, "▶", Ui.FSmall, pr, hov ? Ui.Txt : Ui.Sub,
-                        TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+                    Ui.PlayGlyph(g, pr, hov ? Ui.Txt : Ui.Sub);
                 }
 
                 int nameX = songsRect.X + Ui.S(32);
@@ -2651,7 +2671,7 @@ namespace FnfLauncher
                 if (s.Bpm > 0) tag = "BPM " + s.Bpm;
                 if (s.Speed > 0 && Math.Abs(s.Speed - 1) > 0.01) tag += (tag.Length > 0 ? " · " : "") + s.Speed.ToString("0.0") + "x";
                 tag += (tag.Length > 0 ? " · " : "") + (s.HasVoices ? "人声+伴奏" : "合并音轨");
-                int tagW = Ui.S(132);
+                int tagW = Ui.S(150);
                 int lenW = Ui.S(58);
                 Color nameColor = playing ? Ui.Accent : (s.IsVanilla ? Color.FromArgb(168, 178, 200) : Ui.Txt);
 
@@ -2662,7 +2682,7 @@ namespace FnfLauncher
                 Ui.Text(g, tag, Ui.FSmall,
                     new Rectangle(songsRect.Right - tagW - lenW - Ui.S(6), y, tagW, rowH),
                     s.HasVoices ? Ui.Sub : Color.FromArgb(150, 160, 185),
-                    TextFormatFlags.Right | TextFormatFlags.VerticalCenter);
+                    TextFormatFlags.Right | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis | TextFormatFlags.SingleLine);
 
                 long len = playing ? player.LengthMs : s.LengthMs;
                 string lenText = len > 0 ? FormatMs(len) : "";
@@ -4138,6 +4158,20 @@ namespace FnfLauncher
                     on ? Ui.Txt : Ui.Sub,
                     TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis | TextFormatFlags.SingleLine);
             }
+
+            // 模组多到装不下时给一条细滚动条，否则用户不知道下面还有
+            if (ContentH > Height)
+            {
+                int trackH = Height - Ui.S(8);
+                if (trackH > 4)
+                {
+                    int maxScroll = ContentH - Height;
+                    int thumbH = Math.Max(Ui.S(24), (int)(trackH * (double)Height / ContentH));
+                    int thumbY = Ui.S(4) + (int)((trackH - thumbH) * (maxScroll <= 0 ? 0 : scroll / maxScroll));
+                    Ui.FillRound(g, new Rectangle(Width - Ui.S(9), Ui.S(4), Ui.S(4), trackH), Ui.S(2), Ui.A(Color.White, 20));
+                    Ui.FillRound(g, new Rectangle(Width - Ui.S(9), thumbY, Ui.S(4), thumbH), Ui.S(2), Ui.A(Color.White, 95));
+                }
+            }
         }
 
         private void ClampScroll()
@@ -4295,7 +4329,7 @@ namespace FnfLauncher
                 RoundButton bLang = new RoundButton("");
                 bLang.Filled = false;
                 bLang.Font = Ui.FSmall;
-                bLang.SetBounds(Ui.S(300), Ui.S(238), Ui.S(232), Ui.S(24));
+                bLang.SetBounds(Ui.S(236), Ui.S(238), Ui.S(300), Ui.S(24));
                 Action refreshLang = delegate
                 {
                     string name = LangCode == "zh" ? "中文" : "English";
@@ -4354,34 +4388,41 @@ namespace FnfLauncher
             Label l2 = Title("强调色");
             l2.SetBounds(Ui.S(24), Ui.S(86), Ui.S(200), Ui.S(22));
 
+            // 预设色块 + 色相条：按窗口宽度算，10 个色块用 38 的节距，剩下的全给色相条
+            int swPitch = Ui.S(38);
+            int swSize = Ui.S(34);
+            HueBar hueBar = null;   // 先声明：点击色块时要把色相条的选中框收掉
             for (int i = 0; i < Ui.AccentNames.Length; i++)
             {
                 Swatch sw = new Swatch(Ui.AccentNames[i]);
-                sw.SetBounds(Ui.S(24) + i * Ui.S(42), Ui.S(115), Ui.S(36), Ui.S(36));
+                sw.SetBounds(Ui.S(24) + i * swPitch, Ui.S(115), swSize, swSize);
                 sw.Selected = string.Equals(Ui.AccentNames[i], accent, StringComparison.OrdinalIgnoreCase);
                 sw.Picked += delegate(object s, EventArgs e)
                 {
                     AccentName = ((Swatch)s).Key;
                     foreach (Swatch o in swatches) o.Selected = (o == s);
                     foreach (Swatch o in swatches) o.Invalidate();
+                    if (hueBar != null) { hueBar.Selected = false; hueBar.Invalidate(); }
                 };
                 swatches.Add(sw);
                 Controls.Add(sw);
             }
 
             // 自定义主色：一条色相条，点哪取哪
+            int hueX = Ui.S(24) + Ui.AccentNames.Length * swPitch + Ui.S(6);
+            int hueW = Math.Max(Ui.S(96), ClientSize.Width - Ui.S(24) - hueX);
             Label lc = Title("自定义主色");
-            lc.SetBounds(Ui.S(24) + Ui.AccentNames.Length * Ui.S(42) + Ui.S(6), Ui.S(86), Ui.S(160), Ui.S(22));
+            lc.SetBounds(hueX, Ui.S(86), hueW, Ui.S(22));
 
             int hue0 = 339;
             {
                 string a0 = accent ?? "";
                 if (a0.StartsWith("hue:")) int.TryParse(a0.Substring(4), out hue0);
             }
-            HueBar hueBar = new HueBar();
+            hueBar = new HueBar();
             hueBar.Hue = hue0;
             hueBar.Selected = (accent ?? "").StartsWith("hue:");
-            hueBar.SetBounds(Ui.S(24) + Ui.AccentNames.Length * Ui.S(42) + Ui.S(6), Ui.S(112), Ui.S(150), Ui.S(42));
+            hueBar.SetBounds(hueX, Ui.S(112), hueW, Ui.S(42));
             hueBar.Picked += delegate(object s, EventArgs e)
             {
                 HueBar hb = (HueBar)s;
@@ -4538,7 +4579,7 @@ namespace FnfLauncher
             cancel.Click += delegate { DialogResult = DialogResult.Cancel; Close(); };
 
             Controls.Add(l1); Controls.Add(txtRoot); Controls.Add(bBrowse); Controls.Add(bDefault);
-            Controls.Add(l2); Controls.Add(l3); Controls.Add(l4); Controls.Add(chkMin); Controls.Add(l5);
+            Controls.Add(l2); Controls.Add(lc); Controls.Add(l3); Controls.Add(l4); Controls.Add(chkMin); Controls.Add(l5);
             Controls.Add(chkVanilla); Controls.Add(chkKeys); Controls.Add(bKeys); Controls.Add(bClear);
             RoundButton bCacheAll = new RoundButton("清理缓存…");
             bCacheAll.SetBounds(Ui.S(128), Ui.S(352), Ui.S(98), Ui.S(30));

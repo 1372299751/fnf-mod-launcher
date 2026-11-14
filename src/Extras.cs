@@ -1270,6 +1270,12 @@ internal class SongList : Control
             return;
         }
 
+        // 音轨类型标签按译文实测宽度定，否则英文 "Merged audio" 会被右对齐裁掉开头
+        int tagW = Math.Max(
+            TextRenderer.MeasureText(g, Lang.T("人声+伴奏"), Ui.FSmall).Width,
+            TextRenderer.MeasureText(g, Lang.T("合并音轨"), Ui.FSmall).Width) + Ui.S(10);
+        int lenW = Ui.S(58);
+
         for (int i = 0; i < rows.Count; i++)
         {
             int y = (int)Math.Round(i * rowH - scroll);
@@ -1300,25 +1306,22 @@ internal class SongList : Control
             if (playing)
             {
                 Ui.FillRound(g, glyph, Ui.S(5), Ui.Accent);
-                Ui.Text(g, "■", Ui.FSmall, glyph, Color.White, TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+                Ui.StopGlyph(g, glyph, Color.White);
             }
             else
             {
                 Ui.FillRound(g, glyph, Ui.S(5), Ui.CardHi);
-                Ui.Text(g, "▶", Ui.FSmall, glyph, (hover == i || sel) ? Ui.Txt : Ui.Sub,
-                    TextFormatFlags.HorizontalCenter | TextFormatFlags.VerticalCenter);
+                Ui.PlayGlyph(g, glyph, (hover == i || sel) ? Ui.Txt : Ui.Sub);
             }
 
             int nameX = Ui.S(40);
-            int tagW = Ui.S(74);
-            int lenW = Ui.S(58);
             Color nameColor = playing ? Ui.Accent : (s.IsVanilla ? Color.FromArgb(168, 178, 200) : Ui.Txt);
             Ui.Text(g, s.Name, Ui.FHint, new Rectangle(nameX, y, Width - nameX - tagW - lenW - Ui.S(14), rowH),
                 nameColor, TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis | TextFormatFlags.SingleLine);
             Ui.Text(g, s.HasVoices ? "人声+伴奏" : "合并音轨", Ui.FSmall,
                 new Rectangle(Width - tagW - lenW - Ui.S(8), y, tagW, rowH),
                 s.HasVoices ? Ui.Sub : Color.FromArgb(150, 160, 185),
-                TextFormatFlags.Right | TextFormatFlags.VerticalCenter);
+                TextFormatFlags.Right | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis | TextFormatFlags.SingleLine);
             Ui.Text(g, s.LengthMs > 0 ? Fmt(s.LengthMs) : "", Ui.FSmall,
                 new Rectangle(Width - lenW - Ui.S(10), y, lenW, rowH), Ui.Sub,
                 TextFormatFlags.Right | TextFormatFlags.VerticalCenter);
