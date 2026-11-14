@@ -643,7 +643,7 @@ namespace FnfLauncher
         {
             if (Big != null && Big.Width == px) return Big;
             if (Big != null) { Big.Dispose(); Big = null; }
-            Big = IsWeb ? Icons.Globe(px) : Icons.Build(IconPath, Exe, px, Name);
+            Big = (IsWeb && string.IsNullOrEmpty(WebIconPath)) ? Icons.Globe(px) : Icons.Build(IconPath, Exe, px, Name);
             return Big;
         }
 
@@ -1682,7 +1682,18 @@ namespace FnfLauncher
             int iconS = Ui.S(46);
             int ix = r.X + Ui.S(14);
             int iy = r.Y + (r.Height - iconS) / 2;
-            if (m.Thumb != null) g.DrawImage(m.Thumb, new Rectangle(ix, iy, iconS, iconS));
+            if (m.Thumb != null)
+            {
+                Rectangle ir = new Rectangle(ix, iy, iconS, iconS);
+                using (GraphicsPath ip = Ui.Round(ir, Ui.S(9)))
+                {
+                    GraphicsState ist = g.Save();
+                    g.SmoothingMode = SmoothingMode.AntiAlias;
+                    g.SetClip(ip);
+                    g.DrawImage(m.Thumb, ir);
+                    g.Restore(ist);
+                }
+            }
 
             // 第一行：名称（+ 置顶星标）  +  右侧引擎徽章
             string name = m.Title;
@@ -2274,7 +2285,18 @@ namespace FnfLauncher
             Image big = mod.GetBig(Ui.S(176));
             int scale = (int)(iconS * (0.92f + 0.08f * p));
             int off = (iconS - scale) / 2;
-            if (big != null) g.DrawImage(big, new Rectangle(iconRect.X + off + animX, iconRect.Y + off + animY, scale, scale));
+            if (big != null)
+            {
+                Rectangle ir = new Rectangle(iconRect.X + off + animX, iconRect.Y + off + animY, scale, scale);
+                using (GraphicsPath ip = Ui.Round(ir, Ui.S(18)))
+                {
+                    GraphicsState ist = g.Save();
+                    g.SmoothingMode = SmoothingMode.AntiAlias;
+                    g.SetClip(ip);
+                    g.DrawImage(big, ir);
+                    g.Restore(ist);
+                }
+            }
 
             int tx = titleRect.X;
             int tw = titleRect.Width;
