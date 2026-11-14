@@ -2309,7 +2309,11 @@ namespace FnfLauncher
 
             string sub = mod.PackName.Length > 0 ? mod.PackName
                 : (mod.IsWeb ? (mod.Url ?? "") : Path.GetFileName(mod.Exe));
-            Ui.Text(g, sub, Ui.FSub, new Rectangle(tx, ny, tw, subRect.Height), Ui.Sub,
+            // 副标题（网页版是网址）不能画到「查看模组信息」按钮底下，否则长网址会被压住
+            int subW = tw;
+            if (infoChipRect.Width > 0)
+                subW = Math.Max(Ui.S(60), infoChipRect.X - Ui.S(8) - tx);
+            Ui.Text(g, sub, Ui.FSub, new Rectangle(tx, ny, subW, subRect.Height), Ui.Sub,
                 TextFormatFlags.Left | TextFormatFlags.VerticalCenter | TextFormatFlags.EndEllipsis | TextFormatFlags.SingleLine);
 
             int tagX = tagPoint.X, tagY = tagPoint.Y;
@@ -2362,7 +2366,7 @@ namespace FnfLauncher
                 if (mod.DirModifiedTicks > 0)
                 {
                     if (files.Length > 0) files += " · ";
-                    files += "修改 " + new DateTime(mod.DirModifiedTicks).ToString("yyyy-MM-dd");
+                    files += "修改于 " + new DateTime(mod.DirModifiedTicks).ToString("yyyy-MM-dd");
                 }
                 if (files.Length > 0) cardB.Add(new string[] { "文件", files });
             }

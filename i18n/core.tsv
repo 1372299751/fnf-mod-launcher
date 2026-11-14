@@ -312,3 +312,357 @@ Lua 脚本…	Lua scripts…	Lua 腳本…	Scripts Lua…
 ▶  合听	▶  Mix	▶  合聽	▶  Mezclar
 前置	Front	前置	Frente
 成就	Achievements	成就	Logros
+欢迎使用 FNF 模组启动器	Welcome to FNF Mod Launcher
+第一次使用，先选一下你的 FNF 模组放在哪个文件夹。\n	First run: choose the folder that holds your FNF mods.\n
+启动器会把这个文件夹下的每个子文件夹当成一个模组（自动找 exe 和 icon.ico）。\n	Every subfolder inside is treated as one mod (the exe and icon.ico are found automatically).\n
+以后加模组只要把文件夹丢进来，或者用「＋ 添加模组」。	Later just drop a folder in, or use “＋ Add mod”.
+✓ 在这个文件夹里找到 	✓ Found 
+\n有些魔改包会在 exe 里去掉版本字符串，识别不到时可以在这里手动填，会覆盖自动结果。\n	\nSome modded packs strip the version string from the exe. If detection fails, fill it in here — it overrides the auto result.
+压缩包 (*.zip;*.rar;*.7z)|*.zip;*.rar;*.7z|所有文件 (*.*)|*.*	Archives (*.zip;*.rar;*.7z)|*.zip;*.rar;*.7z|All files (*.*)|*.*
+　·　免安装 · 解压即用，不需要装运行库	 · Portable: unzip and run, no runtime required
+  当前识别目录 	  Mods folder: 
+　｜　已识别 	 | detected 
+还没有模组\n点下面的「＋ 添加模组」，或者直接把文件夹拖进窗口	No mods yet.\nUse “＋ Add mod” below, or drag a folder into the window.
+（exe 丢失）	(exe missing)
+ · 周 	 · weeks 
+ · 角色 	 · characters 
+ · 舞台 	 · stages 
+ · 音符 	 · notes 
+ · 事件 	 · events 
+没有找到曲目文件夹（mods\songs 或 assets\songs）	No song folder found (mods\songs or assets\songs)
+没找到可用的预览图（menubackgrounds / 截图）	No usable preview images (menubackgrounds / screenshots)
+刚刚	just now
+正在创建音乐缓存…（第一次会慢几秒）	Creating the audio cache… (first time takes a few seconds)
+\r\n\r\n可以先试「伴奏」。	\r\n\r\nTry “Instrumental” instead.
+试听	Listen
+已用系统播放器打开	Opened in your default player
+Psych Engine 的 mods 文件夹里，一个子文件夹就是一首曲目；改名会连曲目一起改。	In Psych Engine each subfolder of mods is one song; renaming renames the song too.
+路径里带中文时个别引擎读不到资源，能放英文目录就放英文目录。	Some engines cannot load assets from non-ASCII paths; prefer an ASCII-only folder.
+启动器每次启动前会自动备份存档，出问题可以去 launcher\backups 里翻。	The launcher backs up saves before every launch; look in launcher\backups.
+曲目窗口里可以直接试听，不用先进游戏。	You can audition songs here without launching the game.
+按 F5 重新扫描模组，把文件夹拖进窗口也能添加。	Press F5 to rescan; dropping a folder into the window also adds it.
+详情页的「资料」里能看到故事、成就和用到的资源。	The “Details” tab shows the story, achievements and assets.
+Ctrl + 数字 可以快速启动列表里的第 N 个模组。	Ctrl + a number launches the Nth mod in the list.
+准备启动参数	Preparing arguments
+检查游戏文件	Checking game files
+组装启动命令	Building the command line
+正在拉起进程	Starting the process
+正在启动	Launching
+你知道吗：	Did you know: 
+每次询问	Ask every time
+（保存后自动重启）	(restarts after saving)
+界面语言：	Language: 
+清理 mod 缓存	Clear mod cache
+缓存已清理。点「保存」回到主界面后会重新识别所有 mod。	Cache cleared. Click Save and all mods are re-detected.
+清理缓存	Clear cache
+保存后导出 ✓	Exported ✓
+试听缓存已清理（释放约 	Audio cache cleared (freed about 
+启动参数 · 	Launch args · 
+启动参数（留空表示不加参数，例如 -debug）	Launch arguments (empty = none, e.g. -debug)
+工作目录（留空 = exe 所在目录）	Working directory (empty = the exe's folder)
+　·　网页版 	 · web 
+　·　搜索「	 · search “
+正在扫描模组…（	Scanning mods… (
+开始扫描：	Scan started: 
+扫描失败：	Scan failed: 
+未知错误	unknown error
+扫描 	Scanned 
+ 个模组，用时 	 mods in 
+ ms，缓存命中 	 ms, cache hits 
+扫描完成：	Scan complete: 
+ 个模组（	 mods (
+识别失败	detection failed
+识别失败 	detection failed 
+点右键→引擎信息…可手动填	Right-click → Engine info… to fill it in
+已备份存档：	Saves backed up: 
+没有可备份的存档文件	No save files to back up
+恢复失败，检查备份是否完整	Restore failed — check that the backup is complete
+在资源管理器中定位 exe	Show the exe in Explorer
+已移除引用	Reference removed
+删除本地游戏（网页版不可用）	Delete local game (not available for web entries)
+重命名模组	Rename mod
+显示名称	Display name
+只改启动器里显示的名字，不会动文件夹名。留空 = 恢复成文件夹名。	Changes the name shown here only, not the folder. Empty = use the folder name.
+已重命名：	Renamed: 
+已恢复文件夹名	Folder name restored
+模组：	Mod: 
+\r\n本地版本：	\r\nLocal version: 
+\r\n\r\n是否用浏览器打开 GameBanana 的搜索页？（可直接比对最新版本）	\r\n\r\nOpen the GameBanana search page in your browser to compare the latest version?
+打不开浏览器。	Cannot open the browser.
+已隐藏 	Hidden 
+已取消隐藏 	Unhidden 
+批量设置分类	Set category for all
+分类名	Category name
+会应用到当前选中的所有模组。留空 = 设为未分类。	Applies to every selected mod. Empty = uncategorized.
+已把 	Moved 
+ 个模组归到：	 mods to: 
+已备份 	Backed up 
+ 个模组的存档	 mods' saves
+设置分类	Set category
+同一个分类的模组可以用顶部「分类」按钮一键筛选。留空 = 未分类。	Mods in the same category can be filtered with the “Category” button above. Empty = uncategorized.
+已归类到：	Categorized as: 
+已设为未分类	Set to uncategorized
+选择图标（png / jpg / ico / bmp）	Pick an icon (png / jpg / ico / bmp)
+图片|*.png;*.jpg;*.jpeg;*.ico;*.bmp|所有文件|*.*	Images|*.png;*.jpg;*.jpeg;*.ico;*.bmp|All files|*.*
+图标已更新	Icon updated
+设置图标失败：\r\n	Failed to set the icon:\r\n
+设置图标	Set icon
+已加到开始菜单	Added to the Start menu
+已在桌面创建快捷方式	Desktop shortcut created
+创建快捷方式失败（系统限制？）	Failed to create the shortcut (system restriction?)
+快捷方式	Shortcut
+创建快捷方式失败：\r\n	Failed to create the shortcut:\r\n
+已从列表删除：	Removed from the list: 
+已移除引用：	Reference removed: 
+这个模组正在运行，先关掉游戏再删。	This mod is running — close the game first.
+删除本地游戏	Delete local game
+删除这个模组？\r\n\r\n	Delete this mod?\r\n\r\n
+\r\n\r\n⚠ 你开启了「永久删除」，不进回收站、不能撤销。	\r\n\r\n⚠ Permanent delete is on: no recycle bin, no undo.
+\r\n\r\n会移到回收站，之后还能还原。	\r\n\r\nIt moves to the recycle bin and can be restored.
+再确认一次：删掉 	One more time — delete 
+ 吗？	?
+移到回收站失败（可能被占用或路径太长）。	Could not move it to the recycle bin (in use, or the path is too long).
+已删除：	Deleted: 
+删除失败（可能被占用）：\r\n	Delete failed (in use?):\r\n
+作者 / 简介	Author / intro
+作者（简介会显示在作者后面）	Author (the intro shows after the name)
+只影响启动器里显示的信息，不改 mod 文件。留空 = 不显示。	Only affects what the launcher shows, not the mod files. Empty = hidden.
+已记录作者：	Author saved: 
+已清除作者	Author cleared
+没找到存档目录，先打开模组目录	No save folder found — opening the mod folder instead
+文本文件|*.txt	Text files|*.txt
+诊断信息已保存到：\r\n	Diagnostics saved to:\r\n
+导出诊断	Export diagnostics
+导出失败：	Export failed: 
+文本文件 (*.txt)|*.txt	Text files (*.txt)|*.txt
+已导出 	Exported 
+ 个模组到：	 mods to: 
+导出失败	Export failed
+文本文件 (*.txt)|*.txt|所有文件 (*.*)|*.*	Text files (*.txt)|*.txt|All files (*.*)|*.*
+读取失败	Read failed
+这个文件里没有可识别的模组行。	No recognizable mod lines in this file.
+导入模组清单	Import mod list
+清单里 	In the list 
+ 个模组本地都有	 mods are all present locally
+清单共 	List has 
+ 个模组，本地缺少 	 mods, missing locally: 
+完整清单已保存到：缺失模组.txt	Full list saved to: 缺失模组.txt
+这个 mod 没有找到曲目	No songs found in this mod
+这个 mod 没有可预览的图片	No preview images in this mod
+这个模组没有可预览的图片	No preview images in this mod
+已置顶：	Pinned: 
+已取消置顶	Unpinned
+已隐藏：	Hidden: 
+（设置里可恢复）	 (restore it in Settings)
+已保存启动参数	Launch arguments saved
+引擎信息已更新	Engine info updated
+已添加网页版：	Web entry added: 
+这个文件夹不存在：\r\n	This folder does not exist:\r\n
+设置已保存	Settings saved
+这个模组的 exe 不在了：\r\n\r\n	The exe for this mod is gone:\r\n\r\n
+\r\n\r\n可能被移动或删除。可以右键→引擎信息…附近菜单里重新添加，或删掉这个条目。	\r\n\r\nIt may have been moved or deleted. Use right-click → Engine info… to add it again, or remove this entry.
+启动失败	Launch failed
+路径含中文/特殊字符，个别引擎会读不到资源	The path has non-ASCII or special characters; some engines cannot load assets
+这个目录里没有 lime.ndll / assets / mods，可能不是完整的游戏目录	No lime.ndll / assets / mods here — this may not be a complete game folder
+启动前提醒 	Before launch: 
+启动前发现这些情况：\r\n\r\n· 	Found these issues before launch:\r\n\r\n· 
+\r\n\r\n仍然启动吗？	\r\n\r\nLaunch anyway?
+启动前检查	Pre-launch check
+已启动：	Launched: 
+启动失败：\r\n\r\n	Launch failed:\r\n\r\n
+异常退出	Crashed
+打开启动器	Open launcher
+退出	Exit
+已隐藏到托盘，双击图标可恢复	Hidden to the tray — double-click the icon to restore
+已用默认浏览器打开：	Opened in your default browser: 
+打开网址失败：\r\n\r\n	Could not open the URL:\r\n\r\n
+已安装：	Installed: 
+压缩包格式不支持，仅支持 .zip / .rar / .7z。	Unsupported archive format — only .zip / .rar / .7z.
+已在识别目录里：	Already in the mods folder: 
+目标文件夹已存在：\r\n	The target folder already exists:\r\n
+已复制并添加：	Copied and added: 
+复制失败：\r\n	Copy failed:\r\n
+已添加引用：	Reference added: 
+已经是 	Already 
+% 了	%
+界面 	Interface 
+启动器出错：\r\n\r\n	Launcher error:\r\n\r\n
+游戏还在运行，或者进程信息拿不到。	The game is still running, or process info is unavailable.
+进程正常退出（退出码 0）。	Exited normally (exit code 0).
+退出码 0xC0000135：缺少 DLL（多半是没装 Visual C++ 运行库，或者缺 dll 文件）。	Exit code 0xC0000135: missing DLL (usually the Visual C++ runtime, or a missing dll).
+退出码 0xC0000005：访问冲突（内存越界），常见于 Mod 代码写崩、或显卡驱动/OpenGL 问题。	Exit code 0xC0000005: access violation (out-of-bounds memory) — often a mod crashing, or a GPU driver / OpenGL issue.
+退出码 0xC00000FD：栈溢出，常见于 Mod 递归调用出错。	Exit code 0xC00000FD: stack overflow — usually runaway recursion in a mod.
+退出码 0xC0000409：程序主动崩溃（可能是脚本报错后 kill 了自己）。	Exit code 0xC0000409: the program killed itself (often after a script error).
+退出码 	Exit code 
+）：不是正常退出。	): not a normal exit.
+路径里有中文/特殊字符，个别引擎会读不到资源，建议放到纯英文目录。	The path has non-ASCII or special characters; some engines cannot load assets — move it to an ASCII-only folder.
+这个目录里没有 lime.ndll / assets / mods，可能不是完整的游戏目录。	No lime.ndll / assets / mods here — this may not be a complete game folder.
+目录里没有找到 .log，引擎可能在报错前就退出了（也有可能是缺文件）。	No .log found; the engine may have exited before logging (files may be missing).
+只跑了 	Ran only 
+ 秒就退出，通常是启动阶段就失败了（缺文件/缺运行库）。	 s before exiting — it usually fails during startup (missing files / runtime).
+跑了约 	Ran about 
+ 分钟才退出，更像游戏中途出错。	 min before exiting — more likely an error mid-game.
+可以先用「查看日志」看看最后几行，或者把日志发到群里让人帮忙看。	Use “View log” for the last lines, or share the log where you got help.
+启动异常：	Launch error: 
+）   ·   运行 	)   ·   ran 
+ 秒   ·   	 s   ·   
+还没有启动记录。\r\n\r\n每次点「启动游戏」，这里都会记一条：什么时候、哪个模组、退出码、跑了多久。	No launches yet.\r\n\r\nEvery time you hit “Launch game” a record is added here: when, which mod, exit code, and how long it ran.
+  ·  退出码 	 · exit code 
+        参数：	        Args: 
+图片|*.png;*.jpg;*.jpeg;*.bmp;*.gif|所有文件|*.*	Images|*.png;*.jpg;*.jpeg;*.bmp;*.gif|All files|*.*
+选一张背景图	Pick a background image
+scripts / custom_events / custom_notetypes 里的 .lua 文件	.lua files in scripts / custom_events / custom_notetypes
+这个模组里没有找到 .lua 文件	No .lua files in this mod
+　·　添加目标：	 · Add to: 
+Lua 脚本 (*.lua)|*.lua|所有文件 (*.*)|*.*	Lua scripts (*.lua)|*.lua|All files (*.*)|*.*
+创建目录失败：	Could not create the folder: 
+添加脚本	Add script
+已添加 	Added 
+ 个脚本到 	 scripts to 
+把下面这个脚本移到回收站？\r\n\r\n	Move this script to the recycle bin?\r\n\r\n
+删除脚本	Delete script
+删除失败：	Delete failed: 
+读取失败：	Read failed: 
+mod 目录里没有 libvlc.dll，无法混音	No libvlc.dll in the mod folder — cannot mix
+加载 libvlc.dll 失败	Failed to load libvlc.dll
+libvlc 初始化失败	libvlc init failed
+转码出错	Transcoding error
+伴奏转码失败	Instrumental transcode failed
+没有解出任何文件（压缩包结构和识别结果不匹配）	Nothing was extracted (the archive layout does not match)
+这个压缩包里没找到 exe，无法用 exe 命名。	No exe in this archive — cannot name it from the exe.
+压缩包格式不支持，仅支持 .zip / .rar / .7z。\r\n\r\n	Unsupported archive format — only .zip / .rar / .7z.\r\n\r\n
+其他格式（.tar / .gz / .iso 等）请先解压成文件夹再拖进来。	For other formats (.tar / .gz / .iso…) extract to a folder first, then drop it in.
+这个压缩包读不出来：\r\n	Could not read this archive:\r\n
+解压 	Extracting 
+ 需要系统里装有 7-Zip、WinRAR 或 Bandizip。\r\n\r\n	 requires 7-Zip, WinRAR or Bandizip installed.\r\n\r\n
+装好之后重试，或者手动解压成文件夹再拖进来。	Install one and retry, or extract to a folder manually and drop it in.
+解压失败，可能是压缩包损坏或需要密码。	Extraction failed — the archive may be corrupt or password-protected.
+」已经存在，要合并覆盖吗？	” already exists. Merge and overwrite?
+已安装到：\r\n	Installed to:\r\n
+安装失败：\r\n	Install failed:\r\n
+libvlc 初始化失败（音频输出不可用）	libvlc init failed (no audio output)
+没有找到 libvlc（这个 mod 没带 VLC 组件）	libvlc not found (this mod ships no VLC)
+这张图读不出来	Could not read this image
+   ·   正在加载模组…	  ·   Loading mods…
+没找到存档目录（这个 mod 还没有存档）	No save folder yet (this mod has no saves)
+已备份：	Backed up: 
+还没有任何备份	No backups yet
+用这份备份覆盖当前存档？\r\n\r\n	Overwrite the current save with this backup?\r\n\r\n
+还原存档	Restore save
+已还原：	Restored: 
+还原失败（存档目录可能被占用）	Restore failed (the save folder may be in use)
+重命名文件夹	Rename folder
+新的名字（同时作为文件夹名）	New name (also the folder name)
+同一目录下已经有「	Already exists in this folder: “
+」了。	”.
+重命名	Rename
+重命名失败：\r\n	Rename failed:\r\n
+暂无备份（启动游戏前后会自动备份，保留最近 5 份）	No backups yet (made automatically around launch, 5 kept)
+主题色	Theme color
+没有找到曲目	No songs found
+这首是合并音轨，没有单独的人声	This track is merged; there is no separate voice track
+正在把伴奏和人声混成一个文件…（第一次会慢几秒）	Mixing the instrumental and voices… (first time takes a few seconds)
+混音失败：	Mixing failed: 
+（可以先听「伴奏」）	 (try “Instrumental” instead)
+已用系统播放器打开：	Opened in your default player: 
+这个 mod 里没有找到可预览的图片	No preview images in this mod
+这张图读不出来：	Could not read this image: 
+NovaFlare (NF) 引擎	NovaFlare (NF) engine
+已复制	Copied
+（未归属）	(unassigned)
+FNF 模组启动器 诊断信息	FNF Mod Launcher diagnostics
+版本: v	Version: v
+时间: 	Time: 
+系统: 	OS: 
+界面缩放: 	UI scale: 
+    DPI 缩放: 	    DPI scale: 
+== 模组 ==	== Mods ==
+ | 曲目 	 | Songs 
+ | 体积 	 | Size 
+ | exe 丢失	 | exe missing
+== 记录 ==	== Records ==
+ 个键（只统计次数，不记录输入内容）	 keys (counts only, no input)
+还没有模组的统计数据（启动一次游戏后再按键才会记录）	No key stats yet (launch a game and press keys first)
+未知引擎	Unknown engine
+原版 FNF	Vanilla FNF
+exe 字符串命中 	exe strings matched 
+目录结构（mods + plugins）	Folder layout (mods + plugins)
+目录结构（mods + assets）	Folder layout (mods + assets)
+目录结构（bin + manifest + lime）	Folder layout (bin + manifest + lime)
+目录结构（assets）	Folder layout (assets)
+Haxe 引擎	Haxe engine
+FNF 引擎	FNF engine
+Lime 运行时	Lime runtime
+无匹配特征	No matching signatures
+版本按字符串池定位（	version located in the string pool (
+一款面向 Friday Night Funkin' 及其衍生引擎的模组管理器，负责模组的识别、安装、启动、浏览、备份与外观定制。以下为功能说明。	A mod manager for Friday Night Funkin' and its derivative engines: it identifies, installs, launches and browses mods, backs up saves and restyles the UI. Here is what it does.
+━━ 模组管理 ━━	━━ Mod management ━━
+软件会自动扫描识别目录，每个文件夹即一个模组，图标取该文件夹下的 icon.ico。引擎与版本通过结构特征、exe 字符串签名和版本锚点三重判断。模组支持分类、隐藏、置顶与重命名，排序方式可在名称、最近启动、引擎之间切换；重命名会直接改动磁盘上的目录名，并同步迁移分类、置顶、作者、游玩记录等配置。可为模组创建桌面与开始菜单快捷方式，网页版条目支持自定义图标。把文件夹或压缩包（.zip / .rar / .7z）拖进主窗口，即可添加或安装。	The launcher scans the mods folder: each folder is one mod and its icon comes from icon.ico inside it. Engine and version are decided three ways — folder structure, exe string signatures and version anchors. Mods can be categorized, hidden, pinned and renamed; sorting switches between name, recent launch and engine. Renaming changes the directory on disk and carries the category, pin, author and playtime config along with it. Mods can get desktop and Start menu shortcuts, and web entries accept a custom icon. Drag a folder or an archive (.zip / .rar / .7z) into the window to add or install it.
+━━ 安装与导入 ━━	━━ Install and import ━━
+压缩包安装会自动识别内部结构，剥掉外层多余的文件夹，只安装真正的那一层。判断依据是最浅一层的 exe；若没有 exe，则看 lime.ndll、mods/pack.json 或 modsList.txt。.zip 由内置解压处理，.rar / .7z 借用本机 Bandizip、7-Zip 或 WinRAR 的命令行；遇到其他格式会直接提示不支持。安装前可给模组起名（同时作为文件夹名），目标已存在时会询问是否合并覆盖。压缩包与文件夹两种安装方式都有进度窗，可中途取消并自动清理残留。	Archive installs detect the inner structure automatically: redundant outer folders are stripped and only the real root is installed, judged by the shallowest exe — or, with no exe, by lime.ndll, mods/pack.json or modsList.txt. .zip uses the built-in extractor; .rar / .7z call the local Bandizip, 7-Zip or WinRAR command line, and other formats are rejected outright. You can name the mod before installing (the name doubles as the folder name); if the target exists you are asked whether to merge and overwrite. Both install paths show a cancellable progress window and clean up leftovers.
+━━ 启动与日志 ━━	━━ Launching and logs ━━
+双击、回车、点「启动游戏」或按 Ctrl+1~9 均可启动前九个模组。启动前会做体检，路径含中文、目录不完整或 exe 丢失都会提示。启动后可自动隐藏到系统托盘，游戏退出时自动恢复窗口；关闭确认小窗提供「隐藏到托盘 / 直接退出」，可记住选择，也可连带关闭游戏。	Double-click, Enter, the “Launch game” button or Ctrl+1~9 all launch the first nine mods. A pre-flight check warns about non-ASCII paths, incomplete folders or a missing exe. The launcher can hide to the tray after launch and restore its window when the game exits; the close prompt offers “Hide to tray / Exit”, can remember your choice and can close the game too.
+每次启动都会记录时间、模组、引擎、退出码与耗时，点标题栏的「日志」可查看、复制、清空。异常退出时自动弹出崩溃分析，把退出码与目录特征翻译成可能原因。软件单实例运行，并支持导出诊断信息。	Every launch records the time, mod, engine, exit code and duration; “Logs” in the title bar shows, copies and clears them. Abnormal exits raise a crash analysis that turns the exit code and folder layout into likely causes. The launcher runs as a single instance and can export diagnostics.
+━━ 试听与内容浏览 ━━	━━ Listening and browsing ━━
+合听会把伴奏与人声预混成一个缓存文件，用系统播放器打开，不会出现不同步；伴奏、人声也可单独播放，只有合并音轨的歌曲会提示无法拆分。	The mix option premixes instrumental and voices into one cached file and opens it in your system player, so the tracks can never drift; instrumental and voices can also play on their own, and only merged tracks are reported as unsplittable.
+曲目列表显示 BPM、难度倍率、音轨类型（人声+伴奏 / 合并）与时长，疑似原版条目可折叠。预览为大图窗口，支持左右切换、双击全屏。资料页包含故事线/周、成就、资源构成（图片 / 音频 / 脚本比例条）、引擎与文件信息以及主题色。Lua 脚本管理会列出 scripts、custom_events、custom_notetypes，可查看、添加、删除。	The song list shows BPM, difficulty multiplier, track type (voices+instrumental / merged) and length, and likely-vanilla entries can be collapsed. Preview is a large-image window with left/right switching and double-click fullscreen. The details page covers story/weeks, achievements, asset breakdown (images / audio / scripts bars), engine and file info plus the theme color. Lua management lists scripts, custom_events and custom_notetypes for viewing, adding and deleting.
+━━ 备份与清理 ━━	━━ Backup and cleanup ━━
+启动模组前自动备份存档，保留最近 5 份，资料窗内可一键还原。清理功能覆盖启动器缓存（模组信息）、引擎日志、试听缓存与旧存档备份。	Saves are backed up automatically before each launch, the newest 5 are kept, and the details window restores them in one click. Cleanup covers the launcher cache (mod info), engine logs, the audio cache and old save backups.
+━━ 界面与外观 ━━	━━ Interface and appearance ━━
+整套界面采用 PCL 式规则：单一色相 8 级色阶，切换强调色时标题栏、卡片、描边会一起偏色。窗口为自绘：无系统边框与标题栏，8px 圆角，标题栏渐变配字标与自绘的 − □ ×；拖边缩放、拖标题栏移动、双击最大化均为自实现，不依赖系统厚边框。导航按钮收进标题栏，左侧底部是大号「启动游戏」，详情区拆成「基本信息 / 运行统计」两张卡，搜索框为圆角自绘（聚焦变强调色，含放大镜与占位提示）。	The whole interface follows PCL-style rules: one hue in 8 levels, so switching the accent shifts the title bar, cards and outlines together. The window is fully custom-drawn: no system border or title bar, 8px corners, a gradient header with the wordmark and hand-drawn − □ ×; edge resizing, title-bar dragging and double-click maximizing are all hand-rolled and need no thick frame. Navigation sits in the title bar, the big “Launch game” button lives bottom-left, details split into “Basic info / Run stats” cards, and the search box is a rounded custom control (accent on focus, with magnifier and placeholder).
+外观可自定义主色（色相条）、背景图与三档浓淡（跨控件拼接对齐），窗口背景可压暗；另有 6 种预设强调色、启动动画，并支持 Ctrl +/- 缩放界面。所有外部跳转（网页、资源管理器）做了 1.2 秒去重，不会一次打开两个。	Appearance offers a custom accent (hue bar), a background image and three strength presets that align across controls, with an optional dimmed background; there are also 6 accent presets and a launch animation, and Ctrl +/- zooms the UI. All external jumps (web pages, Explorer) are de-duplicated for 1.2 s so two windows never open at once.
+━━ 下载中心 ━━	━━ Download center ━━
+提供 GameJolt、GameBanana、FridayNightFunkin.net、KBH 等下载站入口。下载中心按分类组织卡片，PE 引擎各版本可展开 / 收起，NF 条目标注国产，选版本提示可永久关闭。	Entry points to GameJolt, GameBanana, FridayNightFunkin.net, KBH and more. The download center groups cards by category, PE engine builds expand and collapse, NF entries are marked as Chinese-made, and the version hint can be dismissed for good.
+━━ 键盘统计 ━━	━━ Key stats ━━
+统计总计与按模组划分的按键次数，记录每个模组里各键按了多少次，不记录任何输入内容。	Counts total key presses and breaks them down by mod: how many times each key was pressed in each mod, with no input content recorded.
+━━ 快捷键 ━━	━━ Shortcuts ━━
+↑ ↓　　　　选择	↑ ↓　　　　Select
+Enter　　　启动	Enter　　　Launch
+F5　　　　 刷新	F5　　　　 Refresh
+Ctrl+F　　 搜索	Ctrl+F　　 Search
+Ctrl+1~9　 启动前九个	Ctrl+1~9　 First nine
+Ctrl +/-　 缩放界面	Ctrl +/-　 Zoom UI
+修改识别目录后立即重扫，无需手动刷新。点右上角版本号可再次打开本窗口。	Changing the mods folder rescans immediately — no manual refresh needed. Click the version number in the top-right corner to open this window again.
+ | 文件 	 | Files 
+mods 目录下的 log.txt / crash*.txt / *.log	log.txt / crash*.txt / *.log in the mods folder
+FNF 汉化教程	FNF Chinese patch guide
+删除这个模组？	Delete this mod?
+会移到回收站，之后还能还原。	It moves to the recycle bin and can be restored.
+⚠ 你开启了「永久删除」，不进回收站、不能撤销。	⚠ Permanent delete is on: no recycle bin, no undo.
+仍然启动吗？	Launch anyway?
+启动前发现这些情况：	Found these issues before launch:
+把下面这个脚本移到回收站？	Move this script to the recycle bin?
+这个模组的 exe 不在了：	The exe for this mod is gone:
+可能被移动或删除。可以右键→引擎信息…附近菜单里重新添加，或删掉这个条目。	It may have been moved or deleted. Use right-click → Engine info… to add it again, or remove this entry.
+启动失败：	Launch failed:
+这个文件夹不存在：	This folder does not exist:
+目标文件夹已存在：	The target folder already exists:
+复制失败：	Copy failed:
+重命名失败：	Rename failed:
+用这份备份覆盖当前存档？	Overwrite the current save with this backup?
+还没有启动记录。	No launches yet.
+每次点「启动游戏」，这里都会记一条：什么时候、哪个模组、退出码、跑了多久。	Every time you hit “Launch game” a record is added here: when, which mod, exit code, and how long it ran.
+还没有模组	No mods yet
+点下面的「＋ 添加模组」，或者直接把文件夹拖进窗口	Use “＋ Add mod” below, or drag a folder into the window.
+本地版本：	Local version:
+是否用浏览器打开 GameBanana 的搜索页？（可直接比对最新版本）	Open the GameBanana search page in your browser to compare the latest version?
+打开网址失败：	Could not open the URL:
+启动器出错：	Launcher error:
+诊断信息已保存到：	Diagnostics saved to:
+设置图标失败：	Failed to set the icon:
+创建快捷方式失败：	Failed to create the shortcut:
+删除失败（可能被占用）：	Delete failed (in use?):
+这个压缩包读不出来：	Could not read this archive:
+已安装到：	Installed to:
+安装失败：	Install failed:
+这个模组没有找到曲目	No songs found in this mod
+引擎：	Engine: 
+引擎:	Engine: 
+曲目：	Songs: 
+作者：	Author: 
+作者:	Author: 
+预览 	Preview 
+资料 · 	Details · 
+分类：	Category: 
+分类:	Category: 
+查看 · 	View · 
